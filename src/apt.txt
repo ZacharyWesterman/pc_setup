@@ -1,0 +1,18 @@
+wget
+git
+build-essential
+lua5.4
+lua5.1
+liblua5.1-0-dev
+make
+doxygen
+obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/obsidian_1.8.4_amd64.deb
+code https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+discord https://discord.com/api/download?platform=linux&format=deb
+firefox
+mongodb-compass https://downloads.mongodb.com/compass/mongodb-compass-1.45.2.x86_64.rpm
+gnupg
+curl
+zip
+python3
+python-is-python3
