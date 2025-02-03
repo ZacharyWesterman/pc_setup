@@ -8,3 +8,4 @@ ms-vscode.cpptools
 ms-vscode.makefile-tools
 skrunk.paisley
 timonwong.shellcheck
+landun.xndotjs
