@@ -20,7 +20,7 @@ load_config() {
             names+=("$name")
             urls+=("$url")
         fi
-    done <apt.txt
+    done < config/apt.txt
 }
 
 install_apt_packages() {
@@ -62,6 +62,16 @@ install_web_packages() {
     fi
 }
 
+install_snap_packages() {
+    if ! is_installed snap; then
+        echo "ERROR: Snap is not installed. Skipping snap installs."
+        return 1
+    fi
+
+    readarray snap_packages < config/snap.txt
+    sudo snap install "${snap_packages[@]}" -y
+}
+
 # First update apt and upgrade any packages
 sudo apt update
 sudo apt upgrade -y
@@ -70,8 +80,10 @@ sudo apt upgrade -y
 load_config
 install_apt_packages
 install_web_packages
+install_snap_packages
 
 # Install applications that are more manual
+rustup default stable
 ./install/mongodb.sh
 ./install/mullvad.sh
 

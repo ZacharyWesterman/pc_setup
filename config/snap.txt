@@ -1,0 +1,5 @@
+blender
+firefox
+freecad
+yt-dlp
+libation

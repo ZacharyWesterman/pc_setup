@@ -1,9 +1,8 @@
 wget
 git
 build-essential
-lua5.4
-lua5.1
-liblua5.1-0-dev
+lua5.3
+liblua5.3-dev
 make
 doxygen
 obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/obsidian_1.8.4_amd64.deb
@@ -16,3 +15,7 @@ curl
 zip
 python3
 python-is-python3
+snap
+arduino
+rustup
+gimp
