@@ -7,7 +7,7 @@ clear
 
 echo 'THIS IS YOUR SSH PUBLIC KEY. ADD IT TO GITHUB NOW!'
 echo '----------------------------------------------'
-cat ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
 echo '----------------------------------------------'
 cat "PRESS ENTER TO CONTINUE...."
 read -r xx
