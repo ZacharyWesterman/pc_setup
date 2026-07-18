@@ -65,8 +65,7 @@ install_snap_packages() {
         return 1
     fi
 
-    readarray snap_packages < ../config/snap.txt
-    sudo snap install "${snap_packages[@]}"
+    sudo snap install $(cat ../config/snap.txt)
 }
 
 # First update apt and upgrade any packages
