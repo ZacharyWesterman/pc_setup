@@ -12,6 +12,9 @@ cd repos || exit 1
 git config --global user.name "Zachary Westerman"
 git config --global user.email "westerman.zachary@gmail.com"
 
+# Make sure system doesn't prompt to confirm the hostname is correct.
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+
 while read -r i; do
     [ ! -e "$i" ] && git clone "git@github.com:ZacharyWesterman/$i.git" --recurse-submodules
 done < "$dir"/config/repos.txt
