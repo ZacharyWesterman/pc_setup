@@ -40,7 +40,10 @@ install_web_packages() {
 
     for i in "${urls[@]}"; do
         fname="$(basename "$i")"
-        if ! wget "$i"; then
+        fname="${fname%\?*}"
+        fname="${fname%.deb}"
+        read -r xx
+        if ! wget "$i" -O "./$fname"; then
             failed_web_packages+=("$i")
         else
             success_web_packages+=("./$fname")
