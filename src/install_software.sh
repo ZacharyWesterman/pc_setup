@@ -66,7 +66,6 @@ install_snap_packages() {
     fi
 
     for i in $(cat ../config/snap.txt); do
-        echo "<<$i>>"
         sudo snap install "$i" --classic
     done
 }

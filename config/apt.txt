@@ -4,7 +4,6 @@ btop
 build-essential
 code https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
 curl
-discord https://discord.com/api/download?platform=linux&format=deb
 doxygen
 ffmpeg
 firefox
