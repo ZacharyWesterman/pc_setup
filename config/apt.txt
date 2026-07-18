@@ -1,21 +1,31 @@
-wget
-git
-build-essential
-lua5.3
-liblua5.3-dev
-make
-doxygen
-obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/obsidian_1.8.4_amd64.deb
-code https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
-discord https://discord.com/api/download?platform=linux&format=deb
-firefox
-mongodb-compass https://downloads.mongodb.com/compass/mongodb-compass-1.45.2.x86_64.rpm
-gnupg
-curl
-zip
-python3
-python-is-python3
-snap
+7zip
 arduino
-rustup
+btop
+build-essential
+code https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+curl
+discord https://discord.com/api/download?platform=linux&format=deb
+doxygen
+ffmpeg
+firefox
 gimp
+git
+gnupg
+liblua5.3-dev
+libreoffice
+lua5.3
+luarocks
+make
+mongodb-compass https://downloads.mongodb.com/compass/mongodb-compass-1.45.2.x86_64.rpm
+obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/obsidian_1.8.4_amd64.deb
+openjdk-25-jre
+python-is-python3
+python3
+python3-poetry
+rustup
+snap
+sshfs
+vim
+wget
+wine
+zip

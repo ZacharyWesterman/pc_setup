@@ -1,0 +1,6 @@
+skrunk
+subsonic-kiosk
+arduino-giga-emulator
+libzed
+gigawidgets
+enchanter

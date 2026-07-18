@@ -1,5 +1,8 @@
 blender
+discord
 firefox
 freecad
-yt-dlp
+inkscape
+krita
 libation
+yt-dlp

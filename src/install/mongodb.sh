@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# If already installed, skip installation.
 dpkg -s mongodb-org &>/dev/null && exit 0
 
 curl -fsSL https://www.mongodb.org/static/pgp/server-8.0.asc |
