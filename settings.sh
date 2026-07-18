@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Make sure path is set as I like.
+./src/setpath.sh
+
 # Set dark mode
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 

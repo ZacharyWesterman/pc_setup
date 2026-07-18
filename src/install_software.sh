@@ -84,6 +84,7 @@ install_snap_packages
 rustup default stable
 ./install/mongodb.sh
 ./install/mullvad.sh
+./install/noisetorch.sh
 
 # Remove unneeded packages
 sudo apt autoremove -y

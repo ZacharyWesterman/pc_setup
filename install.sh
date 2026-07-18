@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+./src/setpath.sh
+
 ./src/daedalus.sh || exit 1
 ./src/ssh_key.sh || exit 1
 ./src/install_software.sh || exit 1

@@ -15,7 +15,6 @@ lua5.3
 luarocks
 make
 mongodb-compass https://downloads.mongodb.com/compass/mongodb-compass_1.49.12_amd64.deb
-obsidian https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.4/obsidian_1.8.4_amd64.deb
 openjdk-25-jre
 python-is-python3
 python3
