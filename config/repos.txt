@@ -4,3 +4,4 @@ arduino-giga-emulator
 libzed
 gigawidgets
 enchanter
+paisley
