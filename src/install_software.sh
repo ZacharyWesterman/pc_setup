@@ -38,14 +38,11 @@ install_web_packages() {
     cd ~/Downloads || exit 1
     echo "Downloading extra applications from the web..."
 
-    for i in "${urls[@]}"; do
-        fname="$(basename "$i")"
-        fname="${fname%\?*}"
-        fname="${fname%.deb}.deb"
-        if ! wget "$i" -O "./$fname"; then
-            failed_web_packages+=("$i")
+    for i in "${#urls[@]}"; do
+        if ! wget "${urls[$i]}" -O "./${names[$i]}.deb"; then
+            failed_web_packages+=("${urls[$i]}")
         else
-            success_web_packages+=("./$fname")
+            success_web_packages+=("./${names[$i]}.deb")
         fi
     done
 
