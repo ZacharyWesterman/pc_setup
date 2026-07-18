@@ -65,7 +65,7 @@ install_snap_packages() {
         return 1
     fi
 
-    readarray snap_packages < config/snap.txt
+    readarray snap_packages < ../config/snap.txt
     sudo snap install "${snap_packages[@]}" -y
 }
 
