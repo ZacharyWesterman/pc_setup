@@ -6,3 +6,4 @@ inkscape
 krita
 libation
 yt-dlp
+steam
