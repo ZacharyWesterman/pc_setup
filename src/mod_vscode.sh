@@ -6,5 +6,5 @@ cd "${BASH_SOURCE%/*}" || exit 1
 extensions=()
 while read -r i; do
     extensions+=("--install-extension=$i")
-done < config/vscode.txt
+done < ../config/vscode.txt
 code "${extensions[@]}"

@@ -11,4 +11,4 @@ git config --global user.email "westerman.zachary@gmail.com"
 
 while read -r i; do
     [ ! -e "$i" ] && git clone "git@github.com:ZacharyWesterman/$i.git" --recurse-submodules
-done < config/repos.txt
+done < ../config/repos.txt

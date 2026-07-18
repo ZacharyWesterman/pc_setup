@@ -20,7 +20,7 @@ load_config() {
             names+=("$name")
             urls+=("$url")
         fi
-    done < config/apt.txt
+    done < ../config/apt.txt
 }
 
 install_apt_packages() {
