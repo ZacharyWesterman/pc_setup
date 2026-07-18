@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+[ -e ~/.ssh/config ] && exit
+
 clear
 
 echo "SUDOERS PASSWORD:"
