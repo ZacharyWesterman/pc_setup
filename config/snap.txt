@@ -7,3 +7,4 @@ krita
 libation
 yt-dlp
 steam
+code

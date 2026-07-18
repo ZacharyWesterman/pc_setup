@@ -2,7 +2,6 @@
 arduino
 btop
 build-essential
-code https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
 curl
 doxygen
 ffmpeg
