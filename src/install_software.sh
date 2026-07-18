@@ -65,7 +65,9 @@ install_snap_packages() {
         return 1
     fi
 
-    sudo snap install --classic $(cat ../config/snap.txt)
+    for i in $(cat ../config/snap.txt); do
+       sudo snap install --classic "$i"
+    done
 }
 
 # First update apt and upgrade any packages
