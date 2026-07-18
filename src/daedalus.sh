@@ -2,7 +2,10 @@
 
 clear
 
+echo "SUDOERS PASSWORD:"
 sudo echo
+
+echo "MAKE SURE THAT DAEDALUS HAS SSH VIA PASSWORD ALLOWED!"
 
 while true; do
     echo -n "INPUT THE IP TO DAEDALUS: "
