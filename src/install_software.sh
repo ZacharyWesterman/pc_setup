@@ -39,6 +39,8 @@ install_web_packages() {
     echo "Downloading extra applications from the web..."
 
     for i in "${#urls[@]}"; do
+        [ "${urls[$i]}" == '' ] && continue
+
         if ! wget "${urls[$i]}" -O "./${names[$i]}.deb"; then
             failed_web_packages+=("${urls[$i]}")
         else
@@ -57,7 +59,6 @@ install_web_packages() {
         for i in "${failed_web_packages[@]}"; do
             echo "    $i"
         done
-        exit 1
     fi
 }
 
