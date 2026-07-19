@@ -1,0 +1,14 @@
+[Unit]
+Description=Mount Daedalus storage with sshfs
+After=network-online.target
+Wants=network-online.target
+
+[Install]
+WantedBy=default.target
+
+[Mount]
+What=daedalus:/mnt/storage/data/zachary_files_bkup
+Where=/mnt/storage
+Type=fuse.sshfs
+Options=_netdev,reconnect,ServerAliveInterval=30,ServerAliveCountMax=5,x-systemd.automount
+TimeoutSec=60

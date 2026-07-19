@@ -26,3 +26,6 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
 
 # Set default list of applications to show in side bar
 gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'code_code.desktop', 'obsidian_obsidian.desktop', 'noisetorch.desktop']"
+
+# Set up filesystem
+./src/filesystem.sh
