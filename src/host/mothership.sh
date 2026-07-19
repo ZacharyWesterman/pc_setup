@@ -10,7 +10,7 @@ sudo mkdir -p /mnt/storage
 sudo chown "$USER:$USER" /mnt/storage
 
 # Create the mount (systemd) file and enable it
-cp ../config/mothership_storage.mount ~/.config/systemd/user/mnt-storage.mount
+cp ../config/mothership_storage.mount ~/.config/systemd/user/
 systemctl --user enable mothership_storage.mount
 systemctl --user start mothership_storage.mount
 
