@@ -10,9 +10,10 @@ sudo mkdir -p /mnt/storage
 sudo chown "$USER:$USER" /mnt/storage
 
 # Create the mount (systemd) file and enable it
-cp ../config/mothership_storage.mount ~/.config/systemd/user/
-systemctl --user enable mothership_storage.mount
-systemctl --user start mothership_storage.mount
+cp ../config/mnt-storage.mount ~/.config/systemd/user/
+systemctl --user daemon-reload
+systemctl --user enable mnt-storage.mount
+systemctl --user start mnt-storage.mount
 
 for i in {Documents,Music,Pictures,Videos}; do
     rm -rf ~/"$i"
