@@ -10,6 +10,7 @@ sudo mkdir -p /mnt/storage
 sudo chown "$USER:$USER" /mnt/storage
 
 # Create the mount (systemd) file and enable it
+mkdir -p ~/.config/systemd/user
 cp ../config/mnt-storage.mount ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable mnt-storage.mount
