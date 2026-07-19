@@ -5,3 +5,4 @@ libzed
 gigawidgets
 enchanter
 paisley
+bash-utils
