@@ -26,3 +26,4 @@ vim
 wget
 wine
 zip
+nmap
