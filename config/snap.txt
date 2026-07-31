@@ -10,3 +10,4 @@ steam
 code
 obsidian
 kdenlive
+remmina
