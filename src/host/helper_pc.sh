@@ -1,6 +1,8 @@
 #!/bin/env bash
 set -e
 
+clear
+
 while [ -z "$FORGEJO_HTTP" ]; do
     echo -n "URL to Forgejo instance: "
     read -r FORGEJO_HTTP
