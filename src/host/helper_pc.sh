@@ -47,4 +47,9 @@ sudo apt upgrade -y
 sudo snap install docker
 
 cd "$HOME/docker/forgejo-runner"
+
+echo "Waiting for docker to come online..."
+while ! sudo docker stats --no-stream &>/dev/null; do
+    sleep 1
+done
 sudo docker compose up -d
