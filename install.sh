@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if grep "$HOSTNAME" config/helper_pc.txt &>/dev/null; then
+    ./src/host/helper_pc.sh
+    exit 0
+fi
+
 ./src/setpath.sh
 
 ./src/daedalus.sh || exit 1
