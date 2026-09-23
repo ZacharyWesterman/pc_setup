@@ -2,6 +2,7 @@
 set -e
 
 clear
+echo "Setting up worker machine \`${HOSTNAME}\`."
 
 while [ -z "$FORGEJO_HTTP" ]; do
     echo -n "URL to Forgejo instance: "
