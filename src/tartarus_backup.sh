@@ -14,7 +14,14 @@ set -e
 
 cd /mnt/storage
 
+echo "Pullng main data..."
 rsync -a daedalus:/mnt/storage/data/ /mnt/storage/data/ "$@"
+echo "Pulling share..."
 rsync -a daedalus:/mnt/storage/share/ /mnt/storage/share/ --delete "$@"
+echo "Pulling airsonic configs..."
 rsync -a daedalus:/var/airsonic/ /mnt/storage/var-airsonic --exclude "airsonic.log.*.gz" "$@"
-rsync -a daedalus:/home/daedalus/* /mnt/storage/daedalus-home/ "$@"
+echo "Pulling daedalus home..."
+rsync -a daedalus:/home/daedalus/* /mnt/storage/daedalus-home/ --exclude docker/forgejo/forgejo/ssh "$@"
+
+echo "Pulling daedalus configs..."
+rsync -a daedalus:/etc/systemd/system/{airsonic,gluh-bot,mc-discord-bot,skrunk,system-monitor}.service /mnt/storage/daedalus-services/ "$@"
