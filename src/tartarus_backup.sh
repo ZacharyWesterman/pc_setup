@@ -14,7 +14,7 @@ set -e
 
 cd /mnt/storage
 
-echo "Pullng main data..."
+echo "Pulling main data..."
 rsync -a daedalus:/mnt/storage/data/ /mnt/storage/data/ "$@"
 echo "Pulling share..."
 rsync -a daedalus:/mnt/storage/share/ /mnt/storage/share/ --delete "$@"
